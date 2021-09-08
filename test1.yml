@@ -1,0 +1,10 @@
+---
+- name: Install Some Utility Software (Test 1)
+  become: yes
+  hosts: all
+  tasks:
+    - name: install utility software
+      package:
+        name: "{{ item }}"
+        state: yes
+      loop: "{{ utility_softwares }}"

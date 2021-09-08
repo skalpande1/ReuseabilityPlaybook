@@ -1,0 +1,10 @@
+---
+- name: Create Necessery files (Test 2)
+  become: yes
+  hosts: all
+  tasks:
+    - name: creating files
+      file:
+        path: "{{ item }}"
+        state: yes
+      loop: "{{ file_list }}"

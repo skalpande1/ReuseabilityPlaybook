@@ -1,0 +1,9 @@
+---
+- name: Install Some Utility Software and Creating files
+  hosts: all
+  import_playbook: test1.yml
+  vars:
+    utility_softwares:
+        - git
+        - wget
+        - tree 

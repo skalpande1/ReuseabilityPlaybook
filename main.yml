@@ -1,8 +1,8 @@
 ---
-- name: Install Some Utility Software and Creating files
-  import_playbook: test1.yml
+- name: install utility softwares
+  import-playbook: test1.yml
   vars:
     utility_softwares:
-        - git
-        - wget
-        - tree 
+      - git
+      - wget
+      - tree

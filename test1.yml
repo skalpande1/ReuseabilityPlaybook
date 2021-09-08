@@ -6,5 +6,5 @@
     - name: install utility software
       package:
         name: "{{ item }}"
-        state: yes
+        state: present
       loop: "{{ utility_softwares }}"

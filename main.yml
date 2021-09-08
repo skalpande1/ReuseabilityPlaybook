@@ -6,3 +6,9 @@
       - git
       - wget
       - tree
+- name: Creating files
+  include: test2.yml
+  vars:
+    file_list:
+        - /tmp/1.txt
+        - /tmp/1.txt

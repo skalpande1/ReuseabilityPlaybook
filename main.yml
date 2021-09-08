@@ -11,4 +11,4 @@
   vars:
     file_list:
         - /tmp/1.txt
-        - /tmp/1.txt
+        - /tmp/2.txt
